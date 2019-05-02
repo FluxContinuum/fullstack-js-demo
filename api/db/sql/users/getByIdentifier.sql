@@ -1,0 +1,1 @@
+SELECT * FROM users WHERE LOWER($1:name) = LOWER($2);

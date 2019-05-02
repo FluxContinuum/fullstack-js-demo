@@ -1,0 +1,1 @@
+SELECT id, location, preview_img, short_description, description FROM analyses

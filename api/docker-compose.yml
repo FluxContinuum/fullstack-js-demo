@@ -1,0 +1,27 @@
+version: "3"
+services:
+# execute "docker-compose build" to update image to reflect src changes
+  app:
+    build:
+      context: ./ 
+      dockerfile: ./docker/app/Dockerfile
+    ports:
+      - "443:443"
+      - "80:80"
+    environment:
+      DB_HOST: db
+    depends_on:
+      - db
+    links:
+      - db
+    restart: always
+
+# If necessary to import dbdump again, must execute "docker-compose rm"
+# postgres initialization folder will be ignored once the image is built
+  db:
+    image: postgres:11.2
+    volumes:
+      - ./dbdump.sql:/docker-entrypoint-initdb.d/dbdump.sql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: localdb

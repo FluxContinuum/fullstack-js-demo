@@ -1,0 +1,36 @@
+{
+  "name": "fluxcontinuum",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.1",
+    "@material-ui/styles": "^3.0.0-alpha.10",
+    "lodash": "^4.17.11",
+    "material-ui": "^1.0.0-beta.47",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.0.4",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.0.2",
+    "socket.io-client": "^2.2.0"
+  },
+  "scripts": {
+    "start": "set HTTPS=true&&set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "https://localhost:443",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -8,4 +8,4 @@ Minimal environment variables in `.env` and a self-signed SSL certificate come b
 
 If you have docker with docker-compose, simply execute `docker-compose up` from the api directory. This will create a PostgreSQL container and a Node runtime for the app. After initialization, you may view the app in your browser at `localhost` on TCP ports 80 and 443.
 
-Alternatively, you may execute `npm install` and `npm start` from both the api and client directories in separate terminals. The client will open automatically in your browser on port 3001. This method will require that you have a local installation of PostgreSQL 11.2 and Node.js 11.10.0
+Alternatively, you may execute `npm install` and `npm start` from both the api and client directories in separate terminals. The client will open automatically in your browser on port 3001, and you may view the back end logging from the api terminal. This method will require that you have a local installation of PostgreSQL 11.2 and Node.js 11.10.0

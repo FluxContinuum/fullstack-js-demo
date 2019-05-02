@@ -19,7 +19,7 @@ const Home = (props) => {
 		  		The goal of this publication is to convey an ability to architect a full stack, end-to-end solution implementing many standard patterns for React and Node.js.
 		  		The app exposes a RESTful Express API over SSL using JSON web tokens for authentication and authorization, with a basic responsive interface from Google's material design specification.
 		  		The source code includes implementations pulled from various private projects, ranging from naive to complete with best practices, aiming to illustrate an iterative and incremental development methodology.
-		  		The source composition aims to demonstrate an appreciation for abstraction and separation of concerns, implementing some common patterns that help to avoid conflicts when collaborating with a team.
+		  		The source structure seeks to demonstrate an appreciation for abstraction and separation of concerns, implementing some common patterns that help to avoid conflicts when collaborating with a team.
 		  		While there are many third-party libraries integrated with both the front and back ends, the core technologies used are listed below:
 		  	</Typography>
 	  	</Grid>
